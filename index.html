@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Project</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="testimoniale">
+      <div class="testimonial">
+        <div class="testimonialimg"></div>
+        <div class="testimonial-content">
+          <div class="testimonial-title">Testimoniale Clienți</div>
+          <div class="testimonial-comentariu"></div>
+          <div class="testimonial-infos">
+            <div class="info-nume"></div>
+            <div class="info-stele"></div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-bar"></div>
+    </div>
+    
+    <div id="overlay" class="overlay-colete">
+      <div id="closeC"><img src="src/images/closeBtn.svg" alt=""></div>
+      <div class="bg-img"></div>
+      <div class="title">colete</div>
+      <div class="container">
+        <img class="overlay-img" src="src/images/coletemaini.png" alt="">
+        <h2>Oferim Servicii <br> de Transport Colete</h2>
+        <div class="tags">
+          <div class="tag tag-1">
+            <img src="src/images/pret.svg" style="width: 27%;" alt="">
+            <p>de la 10 EUR</p>
+          </div>
+          <div class="tag tag-2">
+            <img src="src/images/timp.svg" style="width: 31%;" alt="">
+            <p>În 24-48h</p>
+          </div>
+          <div class="tag tag-3">
+            <img src="src/images/greutate.svg" style="width: 26%;" alt="">
+            <p>Până la 30kg </p>
+          </div>
+          <div class="tag tag-4">
+            <img src="src/images/cupon.svg" style="width: 17%; padding-right: 0.6rem;" alt="">
+            <p>10% Reducere la Peste 5 Colete</p>
+          </div>
+          <div class="tag tag-5">
+            <img src="src/images/suport.svg" style="width: 29%;" alt="">
+            <p>Asistență 24/7</p>
+          </div>
+        </div>
+        <div class="mesaj-rapid-colete">
+        
+        </div>
+        <h4 class="h4-sty">Mesaj Rapid</h4>
+        <div class="mesaj-colete">
+      
+          <div class="custom-button-wrapper">
+            <button id="chooseLocationBtn" class="locatieColete">Alege Locația <img src="src/images/arrow1.svg" alt="Arrow" class="custom-arrow"></button>
+            <div id="locationDropdown" class="dropdown-options locColete" style="z-index: 50;">
+              <button value="romania" style="color:#1a2130 ;">România</button>
+              <button value="germany" style="color:#1a2130 ;">Germania</button>
+              <button value="austria" style="color:#1a2130 ;">Austria</button>
+            </div>
+            <div id="locationErrorMessage" class="locerrColete error-message">Alege locația</div>
+          </div>
+          <button id="submitBtn" class="submitColete">Trimite mesaj <img src="src/images/whatsapplogo1.svg" alt=""> <span>via Whatsapp</span></button>
+        </div>
+        <div class="info-txt">
+          <div class="txt-wrapper">
+            <div class="titlu">Servicii Rapide și Sigure 🚀</div>
+            <div class="paragraf"><span>La SoMar Transport & Logistic</span>, înțelegem cât de important este pentru tine să trimiți pachete către cei dragi, fie că sunt în afara României sau chiar în țară. Ne dedicăm să oferim servicii de transport colete rapide, sigure și eficiente, asigurându-ne că fiecare pachet ajunge la destinație în condiții perfecte. </div>
+          </div>
+          <div class="txt-wrapper">
+            <div class="titlu">Acoperire Extinsă 🌍 </div>
+            <div class="paragraf">Oferim transport colete către destinații din 	🇷🇴<span>Romania</span>, 
+              🇩🇪 <span>Germania</span> și 🇦🇹 <span>Austria</span>.</div>
+          </div>
+          <div class="txt-wrapper">
+            <div class="titlu">Livrări Eficiente ⏱️</div>
+            <div class="paragraf">Optimizăm rutele de transport pentru a asigura livrări <span>rapide și la timp</span></div>
+          </div>
+          <div class="txt-wrapper">
+            <div class="titlu">Asistență Personalizată 👥</div>
+            <div class="paragraf">Echipa noastră este <span>mereu disponibilă</span> pentru a-ți răspunde la întrebări și pentru a-ți oferi suportul necesar în orice moment.</div>
+          </div>
+        </div>
+        </div>
+        <div class="infos-scroll"></div>
+      </div>
+      <div id="overlayT" class="overlay-transport">
+        <div id="closeT"><img src="src/images/closeBtn.svg" alt=""></div>
+        <div class="bg-img"></div>
+        <div class="title">trasport <br> persoane</div>
+        <div class="container">
+          <img class="overlay-img" src="src/images/transportmasina.png" alt="">
+          <h2>Servicii<br> de Transport Persoane</h2>
+          <div class="tags">
+            <div class="tag tag-1">
+              <img src="src/images/pret.svg" style="width: 27%;" alt="">
+              <p>de la 15 EUR</p>
+            </div>
+            <div class="tag tag-2">
+              <img src="src/images/timp.svg" style="width: 25%;" alt="">
+              <p>Între 10-12 ore</p>
+            </div>
+            <div class="tag tag-3">
+              <img src="src/images/facilitati.svg" style="width: 24%;" alt="">
+              <p>Wi-Fi gratuit, AC</p>
+            </div>
+            <div class="tag tag-4">
+              <img src="src/images/locuri.svg" style="width: 27%;" alt="">
+              <p>20 disponibile</p>
+            </div>
+            <div class="tag tag-5">
+              <img src="src/images/cupon.svg" style="width: 12%;" alt="">
+              <p>10% Reducere la grupuri 5+ persoane</p>
+            </div>
+          </div>
+          <div class="mesaj-rapid-colete">
+          
+          </div>
+          <h4 class="h4-sty">Mesaj Rapid</h4>
+          <div class="mesaj-colete">
+        
+            <div class="custom-button-wrapper">
+              <button id="chooseLocationBtn" class="locatieTransport">Alege Locația <img src="src/images/arrow1.svg" alt="Arrow" class="custom-arrow"></button>
+              <div id="locationDropdown" class="dropdown-options locTransport">
+                <button value="romania" style="color:#1a2130 ;">România</button>
+                <button value="germany" style="color:#1a2130 ;">Germania</button>
+                <button value="austria" style="color:#1a2130 ;">Austria</button>
+              </div>
+              <div id="locationErrorMessage" class="error-message locerrTransport">Alege locația
+              </div>
+            </div>
+            <button id="submitBtn" class="submitTransport">Trimite mesaj <img src="src/images/whatsapplogo1.svg" alt=""> <span>via Whatsapp</span></button>
+          </div>
+          <div class="info-txt">
+            <div class="txt-wrapper">
+              <div class="titlu">Servicii Rapide și Sigure 🚀</div>
+              <div class="paragraf"><span>La SoMar Transport & Logistic</span>, ne angajăm să oferim servicii de transport persoane la cele mai înalte standarde. Fie că ai nevoie de transport în țară sau în străinătate, suntem aici să asigurăm o călătorie confortabilă, sigură și eficientă. </div>
+            </div>
+            <div class="txt-wrapper">
+              <div class="titlu">Confort Maxim  🚌 </div>
+              <div class="paragraf"><span>Vehicule Moderne și Confortabile</span>: Flota noastră este compusă din vehicule moderne, echipate cu scaune confortabile, aer condiționat și alte facilități pentru a asigura o călătorie plăcută și relaxantă.</div>
+            </div>
+            <div class="txt-wrapper">
+              <div class="titlu">Destinații Internaționale 🌍</div>
+              <div class="paragraf">Asigurăm transport de persoane către principalele destinații din 🇷🇴 <span>România</span>, 🇩🇪 <span>Germania</span> și 🇦🇹 <span>Austria</span>, oferind conexiuni rapide și directe.</div>
+            </div>
+            <div class="txt-wrapper">
+              <div class="titlu">Siguranță Garantată 🛡️</div>
+              <div class="paragraf"><span>Prioritizăm siguranța pasagerilor</span> noștri prin implementarea unor măsuri riguroase de siguranță, inclusiv verificări periodice ale vehiculelor și respectarea strictă a normelor de transport.</div>
+            </div>
+
+            <div class="txt-wrapper">
+              <div class="titlu">Punctualitate ⏰</div>
+              <div class="paragraf"><span>Respectarea Orelor de Plecare și Sosire</span>: Ne asigurăm că respectăm orele de plecare și sosire pentru a minimiza timpul de așteptare și pentru a oferi o experiență de călătorie fără stres.</div>
+            </div>
+            <div class="txt-wrapper">
+              <div class="titlu">Asistență Personalizată 👥</div>
+              <div class="paragraf">Echipa noastră este disponibilă pentru a oferi <span>suport</span> și pentru a răspunde la toate întrebările tale.</div>
+            </div>
+          </div>
+          </div>
+          <div class="infos-scroll"></div>
+        </div>
+        <div id="overlayP" class="overlay-platforma">
+          <div id="closeP"><img src="src/images/closeBtn.svg" alt=""></div>
+          <div class="bg-img"></div>
+          <div class="title" style="text-align: center;">platforma <br> auto</div>
+          <div class="container">
+            <img class="overlay-img" src="src/images/platfromamasina.png" alt="">
+            <h2>Servicii <br>de Transport Vehicule</h2>
+            <div class="tags">
+              <div class="tag tag-1">
+                <img src="src/images/pret.svg" style="width: 27%;" alt="">
+                <p>de la 10 EUR</p>
+              </div>
+              <div class="tag tag-2">
+                <img src="src/images/timp.svg" style="width: 31%;" alt="">
+                <p>În 24-48h</p>
+              </div>
+              <div class="tag tag-3">
+                <img src="src/images/greutate.svg" style="width: 22%;" alt="">
+                <p>Până la 2000kg</p>
+              </div>
+              <div class="tag tag-4">
+                <img src="src/images/rigla.svg" style="width: 24%;" alt="">
+                <p>Max. 6m x 2.5m”</p>
+              </div>
+              <div class="tag tag-5">
+                <img src="src/images/scut.svg" style="width: 23%; padding-left: 0.5rem;" alt="">
+                <p>până la 5000 EUR</p>
+              </div>
+              <div class="tag tag-6">
+                <img src="src/images/suport.svg" style="width: 28%;" alt="">
+                <p>Asistență 24/7</p>
+              </div>
+            </div>
+            <div class="mesaj-rapid-colete">
+            
+            </div>
+            <h4 class="h4-sty">Mesaj Rapid</h4>
+            <div class="mesaj-colete">
+          
+              <div class="custom-button-wrapper">
+                <button id="chooseLocationBtn" class="locatiePlatforma">Alege Locația <img src="src/images/arrow1.svg" alt="Arrow" class="custom-arrow"></button>
+                <div id="locationDropdown" class="dropdown-options locPlatforma">
+                  <button value="romania" style="color:#1a2130 ;">România</button>
+                  <button value="germany" style="color:#1a2130 ;">Germania</button>
+                  <button value="austria" style="color:#1a2130 ;">Austria</button>
+                </div>
+                <div id="locationErrorMessage" class="error-message locerrPlatforma">Alege locația</div>
+              </div>
+              <button id="submitBtn" class="submitPlatforma">Trimite mesaj <img src="src/images/whatsapplogo1.svg" alt=""> <span>via Whatsapp</span></button>
+            </div>
+            <div class="info-txt">
+              <div class="txt-wrapper">
+                <div class="titlu">Servicii Rapide și Sigure 🚀</div>
+                <div class="paragraf">La <span>SoMar Transport & Logistic</span>, ne dedicăm să oferim servicii profesionale de transport cu platformă auto pentru vehiculele tale. Fie că ai nevoie să transporti un autoturism în țară sau în străinătate, suntem aici să asigurăm o soluție rapidă, sigură și eficientă.</div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="titlu">Transport Rapid și Fiabil 🚗</div>
+                <div class="paragraf">Asigurăm transportul vehiculului tău în cel mai scurt timp posibil, <span>fără întârzieri</span>.</div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="titlu">Destinații Internaționale 🌍</div>
+                <div class="paragraf">Oferim servicii de transport auto în 🇷🇴 <span>România</span>, 
+                  🇩🇪 <span>Germania</span> și 🇦🇹 <span>Austria</span>.</div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="titlu">Siguranță Maximizată 🛡️</div>
+                <div class="paragraf">Utilizăm echipamente moderne pentru a garanta <span>siguranța vehiculului tău</span> pe parcursul transportului.</div>
+              </div>
+              <div class="txt-wrapper">
+                <div class="titlu">Asistență Personalizată 👥</div>
+                <div class="paragraf">Echipa noastră este disponibilă pentru a oferi <span>suport</span> și pentru a răspunde la toate întrebările tale.</div>
+              </div>
+            </div>
+            </div>
+            <div class="infos-scroll"></div>
+          </div>
+          <div id="overlayD" class="overlay-despre">
+            <div id="closeD"><img src="src/images/closeBtn.svg" alt=""></div>
+            <div class="bg-img"></div>
+            <div class="title" style="text-align: center;">despre noi</div>
+            <div class="container" style="padding-top: 2rem;">
+              <h2>Despre Noi</h2>
+              <div class="info-txt">
+                <div class="txt-wrapper">
+                  <div class="titlu">Misiunea Noastră</div>
+                  <div class="paragraf">La <span>SoMar Transport & Logistic</span>, ne dedicăm să oferim soluții de transport de înaltă calitate, rapide și sigure, pentru persoane, colete și vehicule. Suntem mândri să deservim zona Olteniei cu curse regulate către România, Germania și Austria. Misiunea noastră este să transformăm fiecare călătorie într-o experiență plăcută și fiecare livrare într-un succes garantat.</div>
+                </div>
+                <div class="txt-wrapper">
+                  <div class="titlu">Cine Suntem</div>
+                  <div class="paragraf"><span>SoMar Transport & Logistic</span> este un lider regional în servicii de transport persoane, colete și vehicule, cu sediul în Oltenia. Cu o experiență de peste 15 ani, oferim soluții de transport rapide și sigure către România, Germania și Austria.</div>
+                </div>
+                <div class="txt-wrapper">
+                  <div class="titlu">Valorile Noastre</div>
+                  <div class="paragraf"><span>Integritate</span>: Ne ghidăm după principii de onestitate și transparență în toate interacțiunile noastre, construind relații bazate pe încredere și respect reciproc.
+                  <br><br><span>Fiabilitate</span>: Cu o flotă modernă și bine întreținută, ne angajăm să oferim transporturi sigure și livrări la timp, indiferent de destinație.
+                  <br><br><span>Calitate</span>: Suntem dedicați îmbunătățirii continue a serviciilor noastre prin feedback-ul clienților și inovarea constantă a proceselor noastre operaționale.
+                  <br><br><span>Eficiență</span>: Optimizăm fiecare etapă a procesului logistic pentru a oferi soluții rapide și eficiente, minimizând timpul și costurile pentru clienți.
+                  <br><br>
+                  <span>Satisfacția Clienților</span>: Prioritatea noastră numărul unu este satisfacția completă a clienților, oferind un suport excepțional și soluții personalizate.
+                  </div>
+                </div>
+                <div class="txt-wrapper">
+                  <div class="titlu">Ce Ne Deosebește</div>
+                  <div class="paragraf">
+                    <span>Flotă Modernă</span>: Dispunem de o flotă variată și modernă de vehicule, echipate cu tehnologie avansată pentru monitorizare și siguranță, asigurându-ne că fiecare transport este realizat în cele mai bune condiții.
+                    <br><br>
+                    <span>Echipă Dedicată</span>: Echipa noastră de profesioniști calificați este mereu pregătită să răspundă nevoilor clienților noștri, oferind soluții flexibile și adaptate fiecărei solicitări.
+                    <br><br>
+                    <span>Acoperire Extinsă:</span> Operăm curse regulate care conectează Oltenia cu destinații din România, Germania și Austria, oferind astfel soluții de transport rapide și eficiente pe rute internaționale.
+                    
+
+
+                  </div>
+                </div>
+                <div class="txt-wrapper">
+                  <div class="titlu">Istoria Noastră</div>
+                  <div class="paragraf">
+                    De-a lungul celor 15 ani de activitate, am stabilit un standard de excelență în transportul de persoane și logistică. Am început cu o viziune clară: să oferim servicii de transport de încredere și să dezvoltăm relații de durată cu clienții noștri. Prin inovație și adaptare constantă la nevoile pieței, am reușit să ne extindem și să ne diversificăm portofoliul de servicii, devenind un partener de încredere pentru mii de clienți.
+
+                  </div>
+                </div>
+                <div class="txt-wrapper">
+                  <div class="titlu">Angajamentul Nostru</div>
+                  <div class="paragraf">
+                    Ne angajăm să rămânem un partener de încredere pentru clienții noștri, oferindu-le servicii personalizate și soluții eficiente. Continuăm să investim în tehnologie și să formăm echipa pentru a ne asigura că fiecare transport și fiecare livrare depășesc așteptările. La <span>SoMar Transport & Logistic</span>, nu doar că mutăm lucruri dintr-un loc în altul, ci construim punți între oameni și locuri, între nevoi și soluții.
+                  </div>
+                </div>
+
+                <div class="txt-wrapper">
+                  <div class="titlu">Contactează-ne</div>
+                  <div class="paragraf">
+                    Dacă ești în căutarea unui partener de încredere pentru transportul tău, fie că este vorba despre persoane, colete sau vehicule, contactează-ne astăzi. Suntem aici pentru a-ți oferi cea mai bună soluție de transport!
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="infos-scroll"></div>
+            </div>
+
+    <header>
+      <div class="menu">
+        <div class="hamburger">
+          <input class="checkbox" type="checkbox" />
+          <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+            <path
+              class="lineTop line"
+              stroke-linecap="round"
+              stroke-width="4"
+              stroke="black"
+              d="M6 11L44 11"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-width="4"
+              stroke="black"
+              d="M6 24H43"
+              class="lineMid line"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-width="4"
+              stroke="black"
+              d="M6 37H43"
+              class="lineBottom line"
+            ></path>
+          </svg>
+        </div>
+        
+      </div>
+      <div class="overlay">
+        <div class="menu-hamburger">
+          <button data-target="#servicii">Servicii</button>
+          <button data-target="#despre-noi">Despre Noi</button>
+          <button data-target="#contact">Contact</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="logo">
+          <img src="src/images/somar-logo.svg" alt="" />
+        </div>
+       <div class="titlePoz">
+        <div class="title">
+          <h1>Mișcăm oameni, livrăm povești</h1>
+          <p>transport&logistic</p>
+        </div>
+       </div>
+        <div class="banner">
+          <div class="bannerimgs">
+            <div class="imgPozitionare">
+              <img class="platforma" src="src/images/platforma.png" alt="" />
+              <img
+                class="transporter"
+                src="src/images/transporter.png"
+                alt=""
+              />
+              <img class="colete" src="src/images/colete.png" alt="" />
+            </div>
+          </div>
+          <p>Oferim servicii profesionale de transport</p>
+
+          <div class="servicii">
+            <div class="h3-container"><h3>persoane</h3></div>
+            <div class="h3-container"><h3>colete</h3></div>
+            <div class="h3-container"><h3>platformă auto</h3></div>
+          </div>
+
+          <div class="destinatii">
+            <div class="locatie">
+              <img src="src/images/pin.svg" alt="" />
+              <h3>Plecări din Oltenia</h3>
+            </div>
+
+            <div class="destinatie">
+              <img src="src/images/romania-steag.svg" alt="" />
+              <h4>România</h4>
+            </div>
+            <div class="destinatie">
+              <img src="src/images/germania-steag.svg" alt="" />
+              <h4>Germania</h4>
+            </div>
+            <div class="destinatie">
+              <img src="src/images/austria-steag.svg" alt="" />
+              <h4>Austria</h4>
+            </div>
+          </div>
+        </div>
+
+        <h4>Mesaj Rapid</h4>
+        <div class="mesajRapid">
+          <div class="button-container">
+              <button id="selectServiceBtn" class="mesajPrincipal">Serviciu <img src="src/images/arrow.svg" alt="" class="arrow"></button>
+              <div id="serviceOptions" class="options optiuniPrincipal">
+                  <button value="persoane">Persoane</button>
+                  <button value="colete">Colete</button>
+                  <button value="platforma">Platformă</button>
+              </div>
+              <div id="serviceError" class="error-message eroarePrincipal">Alege serviciu </div>
+          </div>
+      
+          <div class="button-container">
+              <button id="selectLocationBtn" class="locatiePrincipal">Locația <img src="src/images/arrow.svg" alt="" class="arrow"></button>
+              <div id="locationOptions" class="options locPrincipal">
+                  <button value="romania">România</button>
+                  <button value="germania">Germania</button>
+                  <button value="austria">Austria</button>
+              </div>
+              <div id="locationError" class="error-message locerrPrincipal">Alege locația</div>
+          </div>
+         
+          <button id="submitBtn" class="submitPrincipal">Trimite mesaj <img src="src/images/whatsapplogo.svg" alt=""> <span>via Whatsapp</span></button>
+      </div>
+     
+      <div class="contact-telefonic">
+        <h4>Contact telefonic 24/7</h4>
+        <button id="apel"onclick="window.location.href='tel:0752612413'"><img src="src/images/telefon-icon.svg" alt="">0752 612 413</button>
+      </div>
+      
+
+      <div class="infos">
+        <div class="infos-gen clienti-count">
+          <img src="src/images/emoji1.png" alt="">
+          <h3 class="counter">1.2k+</h3>
+          <h4>Clienți <br>mulțumiți</h4>
+        </div>
+        <div class="line"></div>
+        <div class="infos-gen transporturi-count">
+          <img src="src/images/emoji2.png" alt="">
+          <h3 class="counter">2.3k+</h3>
+          <h4>Transporturi <br>efectuate</h4>
+        </div>
+        <div class="line"></div>
+        <div class="infos-gen km-count">
+          <img src="src/images/emoji3.png" alt="">
+          <h3 class="counter">500k+</h3>
+          <h4>Kilometrii <br>parcurși</h4>
+        </div>
+        <div class="line"></div>
+        <div class="infos-gen ani-count">
+          <img src="src/images/emoji4.png" alt="">
+          <h3 class="counter">10</h3>
+          <h4>Ani de <br>experiență</h4>
+        </div>
+      </div>
+      
+      
+      
+      
+    </header>
+    <main>
+      <section id="servicii">
+        <h2>SERVICII</h2>
+        <div class="container">
+          <div class="lumini"><img src="src/images/test.png" alt=""></div>
+          <div class="masina"><img src="src/images/masina.png" alt=""></div>
+         <div class="drum"><img src="src/images/drum.svg" alt=""></div>
+         <div class="btnt-position">
+          <div class="transport-btn button" id="openT">
+            <p>Transport <br>Persoane <img src="src/images/text-arrow.svg" alt=""></p>
+            <div class="line"></div>
+           </div>
+         </div>
+         <div class="btnc-position">
+          <div class="colete-btn button" id="openC">
+            <div class="line"></div>
+           <p>Colete <img src="src/images/text-arrow.svg" alt=""></p>
+           </div>
+         </div>
+         <div class="btnp-position">
+          <div class="platforma-btn button" id="openP">
+            <div class="line"></div>
+            <p>Platformă <br>auto <img src="src/images/text-arrow.svg" alt=""></p>
+           </div>
+         </div>
+
+         <div class="detalii-left">
+          <div class="detaliu">
+            <div class="titlu">
+              <div class="text"><div class="t1">Servicii rapide</div> <br><div class="t2">și fiabile</div></div>
+              <img src="src//images/ceas.svg" alt="">
+              <div class="line"></div>
+              <p>Oferim servicii rapide și fiabile de <span>transport persoane</span>, <span>colete</span> și <span>platformă auto.</span></p>
+            </div>
+          </div>
+          <div class="detaliu">
+            <div class="titlu">
+              <div class="text"><div class="t1">Echipă dedicată</div></div>
+              <img src="src//images/echipa.svg" alt="">
+              <div class="line"></div>
+              <p>Echipa noastră este dedicată să ofere servicii de <span>calitate superioară</span>.</p>
+            </div>
+          </div>
+          <div class="detaliu">
+            <div class="titlu">
+              <div class="text"><div class="t1">Livrări eficiente</div> <br><div class="t2">și la timp</div></div>
+              <img src="src//images/colet.svg" alt="">
+              <div class="line"></div>
+              <p>Asigurăm livrări <span>eficiente și la timp</span> pentru toate comenzile.</p>
+            </div>
+          </div>
+         </div>
+
+         <div class="detalii-right">
+          <div class="detaliu">
+            <div class="titlu">
+              <img src="src//images/calendar.svg" alt="">
+              <div class="text"><div class="t1">Curse regulate</div></div>
+              <div class="line"></div>
+              <p>Curse regulate din Oltenia către <span>România</span>, <span>Germania</span> și <span>Austria</span>.</p>
+            </div>
+          </div>
+          <div class="detaliu">
+            <div class="titlu">
+              <img src="src//images/securitate.svg" alt="">
+
+              <div class="text"><div class="t1">Siguranță și</div> <br><div class="t2">confort</div></div>
+              <div class="line"></div>
+              <p>Utilizăm vehicule moderne pentru a asigura transport <span>sigur</span> și <span>confortabil</span>.</p>
+            </div> 
+          </div>
+         </div>
+        </div>
+      </section>
+
+      <section id="despre-noi">
+        <h2>DESPRE NOI</h2>
+        
+        <div class="container">
+          <h3>Cine Suntem</h3>
+          <p><span>SoMar Transport & Logistic</span> este un lider regional în servicii de transport persoane, colete și vehicule, cu sediul în Oltenia. Cu o experiență de peste 15 ani, oferim soluții de transport rapide și sigure către România, Germania și Austria. </p>
+          <div class="despre-btn button" id="openD"><div class="text">Citește mai mult</div><img src="src/images/text-arrow.svg" alt=""></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>CONTACT</h2>
+        <div class="container">
+          <h3>Conectează-te cu Noi</h3>
+          <p>Ia legătura cu echipa noastră simplu și rapid. Suntem disponibili pentru a răspunde tuturor întrebărilor tale și pentru a-ți oferi suportul necesar. </p>
+          <div class="contact-btns">
+            <div id="call-btn" class="contact-btn">
+              <img src="src/images/phone.svg" alt="">
+            </div>
+            <div id="whatsapp-btn" class="contact-btn">
+              <img src="src/images/whatsapp.svg" alt="">
+            </div>
+            <div id="facebook-btn" class="contact-btn">
+              <img src="src/images/facebook.svg" alt="">
+            </div>
+            <div id="email-btn" class="contact-btn">
+              <img src="src/images/email.svg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 <span>SoMar transport&logistic</span>. Toate drepturile rezervate.</p>
+  </footer>
+
+ <script src="src/js/overlays.js"></script>
+ <script src="src/js/mesajrapid.js"></script>
+ <script src="src/js/hamburger.js"></script>
+ <script src="src/js/mesajrapidov.js"></script>
+ <script src="src/js/testimonialedb.js"></script>
+ <script src="src/js/contactBtn.js"></script>
+ <!-- <script src="src/js/increasenum.js"></script> -->
+
+  </body>
+
+
+
+  <script>const lumini = document.querySelector('.lumini img');
+
+    function flashLights() {
+        let flashCount = 0;
+    
+        const flashInterval = setInterval(() => {
+            lumini.style.opacity = (flashCount % 2 === 0) ? '1' : '0';
+            flashCount++;
+    
+            if (flashCount === 6) {
+                clearInterval(flashInterval);
+                setTimeout(flashLights, 4000); // Wait 5 seconds before the next flash
+            }
+        }, 200); // Flash every 200ms
+    }
+    
+    // Start the flashing effect
+    flashLights();
+    </script>
+
+
+
+</html>
